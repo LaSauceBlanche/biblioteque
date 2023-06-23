@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: consolas;
+
+}
+
+.intro {
+  height: 100vh;
+}
+
+.intro video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+header {
+   
+  width: 100%;
+  color: rgb(202, 202, 202);
+  height: 35px;
+  background-color: rgb(59, 59, 59);
+  
+}
+
+
+.intro h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  color: black;
+}
+
+section {
+  height: 100vh;
+
+  color: black;
+}
+
+.menu {
+  height: 30px;
+  width: 100%;
+  text-align: center;
+
+  background: rgb(196, 86, 86);
+}
+
+.box {
+  height: 10px;
+  width: 20px;
+}
+
+
+footer
+
+ul {
+   
+    display: flex;
+  
+  }
+  
+  ul li {
+    list-style: none;
+   margin: 0 20px;
+  
+    transition: 0.5s;
+  }
+  
+  ul li a {
+    display: block;
+    
+    text-decoration: none;
+    padding: 5px;
+    font-size: 18px;
+    
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.5s;
+  }
+  
+  ul:hover li a {
+    transform: scale(1.5);
+    opacity: 0.2;
+    filter: blur(5px);
+  }
+  ul li a:hover {
+    transform: scale(2);
+    opacity: 1;
+    filter: blur(0);
+  }
+  
+  ul li a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:80%;
+    background: #b15570;
+    transition: transform 0.5s;
+    transform-origin: right;
+    transform: scaleX(0);
+    z-index: -1;
+  }
+  
+  ul li a:hover:before {
+    transition: transform 0.5s;
+    transform-origin: left;
+    transform: scaleX(1);
+  
+  }
+  
+
+
+
+
+  /* responsive  */
+
+  @media screen and (max-width: 1080px){
+
+    body{
+    
+        font-size: 1em;
+        width: 60%;
+        margin: auto;
+    }
+    
+    }

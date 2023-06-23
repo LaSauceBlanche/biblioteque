@@ -1,0 +1,135 @@
+body {
+  margin: 5%;
+
+  padding: 0;
+  background-color: #23242a;
+}
+
+.titre {
+  margin-top: 10px;
+  align-items: center;
+  align-content: center;
+  font-size: 1em;
+  color: #68d64d;
+}
+
+/*pour le texte et certaines couleurs cest le bordel quoi*/
+.sign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boxtexte {
+  position: relative;
+  width: 600px;
+  height: 450px;
+  background: #1c1c1c;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.form {
+  position: absolute;
+  inset: 2px;
+  border-radius: 8px;
+  background-color: #28292d;
+  display: flex;
+  flex-direction: column;
+}
+
+/* pour le bouton home*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
+
+.container {
+  width: 100%;
+  min-height: 10vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  position: relative;
+  transform: skewY(-15deg);
+}
+
+ul li {
+  position: relative;
+  list-style: none;
+  width: 400px;
+  background: #3e3f46;
+  padding: 15px;
+  z-index: var(--i);
+  transition: 0.5s;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: 40px;
+  height: 100%;
+  background: #2e3133;
+  transform-origin: right;
+  transform: skewY(45deg);
+  transition: 0.5s;
+}
+
+ul li::after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: #2e3133;
+  transform-origin: bottom;
+  transform: skewX(45deg);
+  transition: 0.5s;
+}
+
+ul li:last-child::after {
+  box-shadow: -100px 100px 20px rgba(0, 0, 0, 0.25);
+}
+
+ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  color: #999;
+  display: block;
+  transition: 0.5s;
+}
+
+ul li:hover {
+  background: #68d64d;
+  transform: translateX(-50px);
+}
+
+ul li:hover::before {
+  background: #3c7a2d;
+}
+
+ul li:hover::after {
+  background: #54ac3e;
+}
+
+ul li:hover a {
+  color: #fff;
+}
+
+/* petit test*/
+
+.carre {
+  height: 300px;
+  width: 300px;
+  background: #68d64d;
+  border-radius: 15px;
+}
+
+h5 {
+  font-size: 1.2em;
+  color: #68d64d;
+}
